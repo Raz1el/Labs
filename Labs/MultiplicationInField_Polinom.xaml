@@ -1,0 +1,31 @@
+﻿<Window x:Class="Labs.MultiplicationInFieldPolinom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Умножение многочленов" Height="526" Width="592" Background="Gainsboro" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Name="label1" Content="Коэффициенты первого многочлена: " Height="28" HorizontalAlignment="Left" Margin="13,76,0,0"   VerticalAlignment="Top" Width="217" />
+        <Label Name="label2" Content="Коэффициенты второго многочлена: " Height="28" HorizontalAlignment="Left" Margin="13,122,0,0"  VerticalAlignment="Top" />
+        <Label Name="label3" Content="Результат умножения: "             Height="28" HorizontalAlignment="Left" Margin="17,296,0,0"  VerticalAlignment="Top" Width="172" />
+        <Label Name="label4" Content="Время работы обычного алгоритма: " Height="28" HorizontalAlignment="Left" Margin="17,416,0,0"  VerticalAlignment="Top" />
+        <Label Name="label5" Content="Время работы БПФ-алгоритма: "      Height="28" HorizontalAlignment="Left" Margin="46,447,0,0" VerticalAlignment="Top" />
+        <Label Name="label6" Content="Справка: коэффициенты многочленов вводятся в порядке увеличения степеней." Height="28" HorizontalAlignment="Left" Margin="67,172,0,0"  VerticalAlignment="Top" />
+        <Label Name="label7" Content="Степень первого многочлена: "      Height="28" HorizontalAlignment="Left" Margin="17,214,0,0"  VerticalAlignment="Top" />
+        <Label Name="label8" Content="Степень второго многочлена: "      Height="28" HorizontalAlignment="Left" Margin="304,214,0,0" VerticalAlignment="Top" />
+        <Label Name="label9" Content="Результат БПФ-умножения:"          Height="28" HorizontalAlignment="Left" Margin="17,348,0,0"  VerticalAlignment="Top" Width="172" />
+        <TextBox Height="42" HorizontalAlignment="Left" Margin="236,76,0,0"  Name="textBox1" VerticalAlignment="Top" Width="226" HorizontalScrollBarVisibility="Visible"/>
+        <TextBox Height="42" HorizontalAlignment="Left" Margin="236,124,0,0" Name="textBox2" VerticalAlignment="Top" Width="226" HorizontalScrollBarVisibility="Visible" />
+        <TextBox Height="42" HorizontalAlignment="Left" Margin="180,296,0,0" Name="textBox3" VerticalAlignment="Top" Width="383" HorizontalScrollBarVisibility="Visible" IsReadOnly="True" />
+        <TextBox Height="45" HorizontalAlignment="Left" Margin="180,348,0,0" Name="textBox6" VerticalAlignment="Top" Width="383" HorizontalScrollBarVisibility="Visible" IsReadOnly="True" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="231,418,0,0" Name="textBox4" VerticalAlignment="Top" Width="192" IsReadOnly="True" TextAlignment="Center"/>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="230,447,0,0" Name="textBox5" VerticalAlignment="Top" Width="193" IsReadOnly="True" TextAlignment="Center"/>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="195,216,0,0" Name="textBox7" VerticalAlignment="Top" Width="85" TextAlignment="Center" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="478,216,0,0" Name="textBox8" VerticalAlignment="Top" Width="85" TextAlignment="Center" />
+        <Button Name="EnterButton"       Content="Перемножить"                               Height="90" Width="93"  HorizontalAlignment="Left" Margin="468,76,0,0"  VerticalAlignment="Top" Background="MediumTurquoise" Click="EnterButton_Click" />
+        <Button Name="ExitButton"        Content="Выход"                                     Height="23" Width="114" HorizontalAlignment="Left" Margin="449,447,0,0" VerticalAlignment="Top" Background="LavenderBlush"   Click="ExitButton_Click" />
+        <Button Name="EnterRandomButton" Content="Задать коэффициенты многочленов рандомно"  Height="25" Width="267" HorizontalAlignment="Left" Margin="294,12,0,0"  VerticalAlignment="Top" Background="Yellow" Click="EnterRandomButton_Click" />
+        <Button Name="EnterHandButton"   Content="Задать коэффициенты многочленов вручную"   Height="25" Width="267" HorizontalAlignment="Left" Margin="17,12,0,0"   VerticalAlignment="Top" Background="Red" Click="EnterHandButton_Click" />
+        <Button Name="EnterAndMulButton" Content="Задать многочлены и перемножить"           Height="23" Width="243" HorizontalAlignment="Left" Margin="180,245,0,0" VerticalAlignment="Top" Background="GreenYellow" Click="EnterAndMulButton_Click" />
+        <Button Name="ClearButton"       Content="Очистить всё"                              Height="23" Width="114" HorizontalAlignment="Left" Margin="449,418,0,0" VerticalAlignment="Top" Background="Olive" Click="ClearButton_Click"  />
+        <CheckBox Name="checkBox1" Content="Посчитать с помощью быстрого алгоритма Фурье"    Height="16" Width="300" HorizontalAlignment="Left" Margin="133,43,0,0"  VerticalAlignment="Top"  />
+    </Grid>
+</Window>

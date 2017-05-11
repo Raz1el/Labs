@@ -1,0 +1,11 @@
+﻿<Window x:Class="Labs.MultiplicationInField"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Умножение чисел и многочленов. Арифметика в конечном поле" Height="205" Width="455" Background="Gainsboro" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Name="MultiplicationNumbersButton"  Content="Умножение чисел"                 Height="39" HorizontalAlignment="Left" Margin="26,41,0,0"    VerticalAlignment="Top" Width="152" Background="Orange"    Click="MultiplicationNumbersButton_Click" />
+        <Button Name="MultiplicationPolinomsButton" Content="Умножение полиномов"             Height="39" HorizontalAlignment="Left" Margin="184,41,0,0"   VerticalAlignment="Top" Width="152" Background="Aqua"      Click="MultiplicationPolinomsButton_Click" />
+        <Button Name="GFArithmeticButton"           Content="Арифметика конечного поля GF(P)" Height="39" HorizontalAlignment="Left" Margin="26,86,0,0"    VerticalAlignment="Top" Width="310" Background="Goldenrod" Click="GFArithmeticButton_Click" />
+        <Button Name="ExitButton"                   Content="Выход"                           Height="84" HorizontalAlignment="Left" Margin="342,41,0,0"  VerticalAlignment="Top" Width="75"  Background="Yellow"    Click="ExitButton_Click" />
+    </Grid>
+</Window>

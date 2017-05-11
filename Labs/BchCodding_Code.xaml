@@ -1,0 +1,41 @@
+﻿<Window x:Class="Labs.BchCodding_Code"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="БЧХ-коды: рабочее окно" Height="640" Width="591" Background="Gainsboro" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <GroupBox Header="Информация" Height="104" HorizontalAlignment="Left" Margin="11,10,0,0" Name="groupBox1" VerticalAlignment="Top" Width="546">
+            <Grid>
+                <Label Content="Построенный код в виде (n, k, t), где n - длина сообщения," Height="28" HorizontalAlignment="Left" Margin="100,6,0,0" Name="label1" VerticalAlignment="Top" />
+                <Label Content="k - число информационных символов и t - количество ошибок: " Height="28" HorizontalAlignment="Left" Margin="84,26,0,0" Name="label2" VerticalAlignment="Top" />
+                <TextBox Name="InfoTextBox" Height="23" HorizontalAlignment="Left" Margin="217,52,0,0"  VerticalAlignment="Top" Width="120" IsReadOnly="True" TextAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Кодирование" Height="144" HorizontalAlignment="Left" Margin="12,120,0,0" Name="groupBox2" VerticalAlignment="Top" Width="545">
+            <Grid>
+                <Label Content="Полином-сообщение: "           Height="28" HorizontalAlignment="Left" Margin="6,13,0,0"  Name="label3" VerticalAlignment="Top" />
+                <Label Content="Закодированное сообщение: "    Height="28" HorizontalAlignment="Left" Margin="6,61,0,0" Name="label4" VerticalAlignment="Top" />
+                <TextBox Name="PolinomtextBox" Height="44" Width="208" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" Margin="189,15,0,0"  VerticalAlignment="Top" TextAlignment="Center" />
+                <TextBox Name="CodeTextBox"    Height="44" Width="208" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" Margin="189,63,0,0"  VerticalAlignment="Top" TextAlignment="Center" IsReadOnly="True" />
+                <Button  Name="EnterButton"    Height="93" Width="116" HorizontalAlignment="Left" Content="Ввод сообщения"   Margin="411,14,0,0"  VerticalAlignment="Top" Click="EnterButton_Click" Background="Pink"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Ошибки" Height="142" HorizontalAlignment="Left" Margin="12,270,0,0" Name="groupBox3" VerticalAlignment="Top" Width="545">
+            <Grid>
+                <Label Content="Сообщение-ошибка: " Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label5" VerticalAlignment="Top" />
+                <Label Content="Закодированное сообщение с ошибкой: " Height="28" HorizontalAlignment="Left" Margin="10,58,0,0" Name="label6" VerticalAlignment="Top" />
+                <TextBox Name="ErrorTextBox"         Height="44" Width="208" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" Margin="144,12,0,0"  TextAlignment="Center" VerticalAlignment="Top" />
+                <TextBox Name="MessWithErrorTextBox" Height="44" Width="281" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" Margin="246,60,0,0" TextAlignment="Center" VerticalAlignment="Top" IsReadOnly="True" />
+                <Button  Name="EnterErrorButton"     Height="44" Width="169" HorizontalAlignment="Left" Content="Ввод ошибки"   Margin="358,12,0,0"  VerticalAlignment="Top" Click="EnterErrorButton_Click" Background="PeachPuff"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Исправление ошибки и декодирование" Height="97" HorizontalAlignment="Left" Margin="12,418,0,0" Name="groupBox4" VerticalAlignment="Top" Width="545">
+            <Grid>
+                <Label Content="Восстановленное сообщение: " Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label7" VerticalAlignment="Top" />
+                <TextBox Name="RecoveryTextBox" Height="44" Width="338" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" Margin="189,12,0,0"  TextAlignment="Center" VerticalAlignment="Top" IsReadOnly="True"/>
+            </Grid>
+        </GroupBox>
+        <Button Name="ExitButton"  Content="Выход"         Height="36" Width="105" HorizontalAlignment="Left" Margin="452,549,0,0"  VerticalAlignment="Top" Click="ExitButton_Click" Background="Tomato" />
+        <Button Name="ClearButton" Content="Очистить поля" Height="36" Width="105" HorizontalAlignment="Left" Margin="12,549,0,0"   VerticalAlignment="Top" Click="ClearButton_Click" Background="SlateGray"/>
+        <Label Content="Справка: коэффициенты многочленов вводятся начиная с младшей степени." Height="28" HorizontalAlignment="Left" Margin="70,515,0,0" Name="label8" VerticalAlignment="Top" />
+    </Grid>
+</Window>

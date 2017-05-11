@@ -1,0 +1,15 @@
+﻿<Window x:Class="Labs.MultiplicationInFieldGf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Арифметика в поле Галуа GF(P)" Height="262" Width="497" Background="Gainsboro" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox Name="PolinomTextBox"        Height="42" Width="226" HorizontalAlignment="Left" Margin="234,25,0,0" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible" />
+        <TextBox Name="CharacteristicTextBox" Height="23" Width="148" HorizontalAlignment="Left" Margin="312,98,0,0" VerticalAlignment="Top" TextAlignment="Center" />
+        <Label Name="Label1" Content="Введите коэффициенты многочлена: " Height="28" HorizontalAlignment="Left" Margin="12,23,0,0"  VerticalAlignment="Top" />
+        <Label Name="Label2" Content="Справка: коэффициенты многочленов вводятся в порядке увеличения степеней." Height="28" HorizontalAlignment="Left" Margin="11,62,0,0"  VerticalAlignment="Top" />
+        <Label Name="Label3" Content="Введите характеристику поля P (P- простое число): " Height="28" HorizontalAlignment="Left" Margin="12,96,0,0"  VerticalAlignment="Top" />
+        <Button Name="BuildGridButton" Content="Построить таблицу" Height="23" Width="182" HorizontalAlignment="Left" Margin="152,143,0,0" VerticalAlignment="Top" Background="MediumSpringGreen" Click="BuildGridButton_Click" />
+        <Button Name="ClearButton"     Content="Очистить поля"     Height="23" Width="146" HorizontalAlignment="Left" Margin="12,180,0,0"  VerticalAlignment="Top" Background="Silver"            Click="ClearButton_Click"     />
+        <Button Name="ExitButton"      Content="Выход"             Height="23" Width="146" HorizontalAlignment="Left" Margin="322,180,0,0" VerticalAlignment="Top" Background="Tan"               Click="ExitButton_Click"      />
+    </Grid>
+</Window>

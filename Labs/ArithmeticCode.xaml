@@ -1,0 +1,8 @@
+﻿<Window x:Class="Labs.ArithmeticCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Арифметическое кодирование" Height="305" Width="624" Background="Gainsboro" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="В процессе..." Height="28" HorizontalAlignment="Left" Margin="260,115,0,0" Name="label1" VerticalAlignment="Top" />
+    </Grid>
+</Window>

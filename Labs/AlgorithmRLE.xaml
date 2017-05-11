@@ -1,0 +1,28 @@
+﻿<Window x:Class="Labs.AlgorithmRle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Алгоритм сжатия RLE" Height="465" Width="652" Background="Gainsboro" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <GroupBox Header="Кодирование информации"   Height="201" Width="606" HorizontalAlignment="Left" Margin="12,6,0,0"  Name="EncodingGroupBox" VerticalAlignment="Top" ></GroupBox>
+        <GroupBox Header="Декодирование информации" Height="152" Width="606" HorizontalAlignment="Left" Margin="12,219,0,0" Name="DecodeGroupBox"   VerticalAlignment="Top" >
+            <Grid>
+                <Label Content="Текст для декодирования: " Height="28" HorizontalAlignment="Left" Margin="18,14,0,0" Name="Label3" VerticalAlignment="Top" />
+                <Label Content="Декодированный текст:"     Height="28" HorizontalAlignment="Left" Margin="33,78,0,0" Name="Label4" VerticalAlignment="Top" />
+                <TextBox Name="InputDecodeTextBox"  Height="42" Width="300" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" Margin="180,14,0,0"  VerticalAlignment="Top" />
+                <TextBox Name="OutputDecodeTextBox" Height="42" Width="300" HorizontalAlignment="Left" HorizontalScrollBarVisibility="Visible" Margin="180,78,0,0"  VerticalAlignment="Top" IsReadOnly="True" />
+                <Button Name="DecodeButton" Content="Декодировать" Height="106" HorizontalAlignment="Left" Margin="486,14,0,0"  VerticalAlignment="Top" Width="102" Click="DecodeButton_Click" Background="DarkKhaki"/>
+            </Grid>
+        </GroupBox>
+        <Button Name="ClearButton" Content="Очистить всё" Height="37" Width="108" HorizontalAlignment="Left" Margin="18,377,0,0"  VerticalAlignment="Top" Click="ClearButton_Click" Background="LawnGreen"    />
+        <Button Name="ExitButton"  Content="Выход"        Height="37" Width="108" HorizontalAlignment="Left" Margin="504,377,0,0" VerticalAlignment="Top" Click="ExitButton_Click"  Background="PaleVioletRed"/>
+        <Grid Margin="18,24,18,227">
+            <TextBox Name="InputCodeTextBox" Height="42" Width="316" HorizontalAlignment="Left" Margin="164,9,0,0" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible" />
+            <TextBox Name="OutputCodeTextBox" Height="42" Width="316" HorizontalAlignment="Left" Margin="164,68,0,0" VerticalAlignment="Top" HorizontalScrollBarVisibility="Visible" IsReadOnly="True" />
+            <Label Content="Текст для кодирования:" Height="28" HorizontalAlignment="Left" Margin="18,7,0,0" Name="Label1" VerticalAlignment="Top" />
+            <Label Content="Закодированный текст:" Height="28" HorizontalAlignment="Left" Margin="18,66,0,0" Name="Label2" VerticalAlignment="Top" />
+            <Button Name="CodeButton" Content="Закодировать" Height="106" HorizontalAlignment="Left" Margin="486,35,0,0" VerticalAlignment="Top" Width="102" Click="CodeButton_Click" Background="Yellow" />
+            <TextBox Name="KF" Height="42" HorizontalAlignment="Left" Margin="164,127,0,0" VerticalAlignment="Top" Width="316" HorizontalScrollBarVisibility="Visible" IsReadOnly="True" />
+            <Label Content="Коэффициент сжатия:" Height="28" HorizontalAlignment="Left" Margin="27,127,0,0" Name="label5" VerticalAlignment="Top" />
+        </Grid>
+    </Grid>
+</Window>

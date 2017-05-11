@@ -1,0 +1,14 @@
+﻿<Window x:Class="Labs.PrimitiveRootWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Нахождение примитивных элементов в конечном поле" Height="346" Width="466" Background="Gainsboro" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Width="447">
+        <Label  Name="label1" Content="Поле GF(P).   Введите простое Р:" Height="28" HorizontalAlignment="Left" Margin="90,12,0,0"  VerticalAlignment="Top" />
+        <Button Name="FindRootButton" Content="Найти корни по модулю P" Height="39" Width="180" HorizontalAlignment="Left" Background="Yellow" Margin="12,82,0,0"   VerticalAlignment="Top"  Click="button1_Click" />
+        <Button Name="Exitbutton"     Content="Выход"                   Height="39" Width="113" HorizontalAlignment="Left" Background="Aqua"   Margin="319,82,0,0"  VerticalAlignment="Top"  Click="exitbutton_Click"  />
+        <Button Name="ClearButton"    Content="Очистить всё"            Height="39" Width="113" HorizontalAlignment="Left" Background="Khaki"  Margin="198,82,0,0"  VerticalAlignment="Top"  Click="button2_Click" />
+        <TextBox TextAlignment="Center"  Height="23" HorizontalAlignment="Left" Margin="283,14,0,0" Name="modTb" VerticalAlignment="Top" Width="63"  />
+        <TextBox IsReadOnly ="True"  Height="168" HorizontalAlignment="Left" Margin="12,127,0,0" Name="ResultTb" VerticalAlignment="Top" Width="420" VerticalScrollBarVisibility="Auto"/>
+        <CheckBox Content="Найти только один примитивный элемент" Height="16" HorizontalAlignment="Left" Margin="95,46,0,0" Name="checkBox1" VerticalAlignment="Top" Width="256" />
+    </Grid>
+</Window>
